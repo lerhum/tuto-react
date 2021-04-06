@@ -6,6 +6,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### Build and run with Docker
+
+1. `docker build -t my-react-app .`
+2. `docker run -p 80:8080 my-react-app`
+3. Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
+
+> if you are working with windows you may have to start the image via the gui in order to authorize the firewall to open the desired port
+
 ### `npm start`
 
 Runs the app in the development mode.\
