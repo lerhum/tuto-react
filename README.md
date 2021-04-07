@@ -9,8 +9,11 @@ In the project directory, you can run:
 ### Build and run with Docker
 
 1. `docker build -t my-react-app .`
-2. `docker run -p 80:8080 my-react-app`
-3. Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
+2. `docker run -p 3000:3000 my-react-app`
+3. `docker ps` in order to get the *container id*
+4. `docker exec -it <container id> /bin/bash`
+5. `npm run start`
+3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 > if you are working with windows you may have to start the image via the gui in order to authorize the firewall to open the desired port
 
